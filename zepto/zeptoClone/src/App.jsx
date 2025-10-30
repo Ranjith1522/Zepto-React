@@ -16,6 +16,8 @@ function App() {
   ]
   return (
     <>
+    <div>
+  
       <div className='main-container'>
           {items.map((item) => {
             return (
@@ -30,6 +32,8 @@ function App() {
             )
           })}
       </div>
+          
+    </div>
     </>
   )
 }
