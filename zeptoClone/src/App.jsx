@@ -6,19 +6,19 @@ import './App.css'
 function App() {
 
   const items = [
-    {id: 1,name: 'Kothi meera',price: 20},
-    {id: 2,name: 'Bendakaya',price: 50},
-    {id: 3,name: 'Dhondakaya',price: 40},
-    {id: 4,name: 'curry leaves',price: 15},
-    {id: 5,name: 'Tomato',price: 45},
-    {id: 6,name: 'Potato',price: 45},
-    {id: 7,name: 'Eggs',price: 60}
+    { id: 1, name: 'Kothi meera', price: 20 },
+    { id: 2, name: 'Bendakaya', price: 50 },
+    { id: 3, name: 'Dhondakaya', price: 40 },
+    { id: 4, name: 'curry leaves', price: 15 },
+    { id: 5, name: 'Tomato', price: 45 },
+    { id: 6, name: 'Potato', price: 45 },
+    { id: 7, name: 'Eggs', price: 60 }
   ]
   return (
     <>
-    <div>
-  
-      <div className='main-container'>
+      <div>
+        <h3>Vegetables</h3>
+        <div className='main-container'>
           {items.map((item) => {
             return (
               <div className='card'>
@@ -28,12 +28,13 @@ function App() {
                 <p>
                   {item.price}
                 </p>
+                <button className="button btn-primary">Add</button>
               </div>
             )
           })}
+        </div>
+
       </div>
-          
-    </div>
     </>
   )
 }
