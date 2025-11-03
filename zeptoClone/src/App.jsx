@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import viteLogo from '/vite.svg';
+import axios from 'axios';
 import './App.css'
 
 function App() {
@@ -15,8 +16,10 @@ function App() {
     { id: 7, name: 'Tomato', price: 60,url:"https://cdn.zeptonow.com/production/tr:w-403,ar-1024-1024,pr-true,f-auto,q-80/cms/product_variant/51f0d9cc-1416-40ae-a035-3923074158d7.jpeg" }
   ];
 
-   function AddToCart() {
+   function AddToCart(product) {
+    const products = product;
     console.log("Added to cart");
+    axios.post('https://fakestoreapi.com/products',products);
   }
 
 
@@ -35,7 +38,7 @@ function App() {
                 <p>
                   {item.price}
                 </p>
-                <button className="button btn-primary" onClick={AddToCart} >Add</button>
+                <button className="button btn-primary" onClick={() => AddToCart(item)} >Add</button>
               </div>
             )
           })}
