@@ -2,3 +2,12 @@
     margin:10px;
     gap:20px;
 }
+
+.navbar {
+    display: flex;
+}
+.nav-right{
+    display:flex;
+    justify-content: flex-end;
+    margin-left: 290px;
+}

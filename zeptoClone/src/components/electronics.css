@@ -8,20 +8,27 @@
   padding: 10px;
 }
 .card {
-  height: 180px;
+  height: 175px;
   width: 110px;
   box-shadow: 0 4px 8px 0 rgba(244, 244, 245, 0.92);
-  border: 0.5px solid black;
+  border: none;
   border-radius: 5px;
   background-color: #e1dfdf;
 }
 
-.card button {
+.card img {
+  height: 100px;
+  width: 100%;
+}
+
+.card p {
+  margin: 0px;
+}
+
+.button {
   background-color: #007bff;
   color: white;
-  border: none;
-  padding: 5px 10px;
-  margin-top: 65px;
-  font-size: 14px;  
-  border-radius: 4px;
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 3px;
 }
